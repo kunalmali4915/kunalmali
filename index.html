@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>🐱Cat Generator</h1>
+        <label for="tagSelect">🏷️Choose a Tag:</label>
+        <select
+          class="form-select form-select-lg mb-3"
+          id="tagSelect"
+          aria-label="Large select example"
+        >
+          <option value="">Any</option>
+          <option value="cute">Cute😻</option>
+          <option value="funny">Funny😹</option>
+          <option value="orange">Orange😺</option>
+          <option value="sleepy">Sleepy😸</option>
+        </select>
+
+        <div class="d-flex align-items-center">
+          <input
+            class="form-check-input mt-1"
+            type="checkbox"
+            value=""
+            id="gifCheckbox"
+          />
+          <label class="form-check-label ms-3" for="gifCheckbox">
+            Get Gif
+          </label>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="getCat()">
+          Get Cat 🐱
+        </button>
+
+        <div id="loader" class="hidden">Loading...😼</div>
+      </div>
+      <div class="right">
+        <div id="imageContainer">
+          <span id="placeholder">Your cat will appear here 😺</span>
+          <img id="catImage" class="hidden" alt="Cat" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
